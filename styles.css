@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --cor-vermelho-forte: #930101;
+  --cor-vermelho-fraco: #bf0101;
+  --cor-laranja: #fe680a;
+  --cor-amarelo: #ffbf1e;
+  --cor-azul-fraco: #017bc4;
+  --cor-azul-medio: #1a2263;
+  --cor-azul-forte: #001645;
+  --cor-preto: #1a2228;
+  --cor-branco: #fcfcf7;
+
+  --fonte-padrao: "Poppins", sans-serif;
+  --fonte-titulo: "Poetsen One", sans-serif;
+
+  --clamp-titulo-1: clamp(1.5rem, 1.1538rem + 1.5385vw, 3rem);
+  --clamp-titulo-2: clamp(1.25rem, 0.9615rem + 1.2821vw, 2.5rem);
+}
+
+/* Resets padrão */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  width: 100vw;
+  max-width: 100vw;
+  height: auto;
+  overflow-x: hidden;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  /* background-color: var(--cor-branco); */
+}
+
+/* fim do reset */
+
+/* header */
+
+.cabeca {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+}
+
+.cabecaMenu {
+  width: 80%;
+  height: 64px;
+  z-index: 2;
+  margin-top: 20px;
+  position: absolute;
+  top: 0;
+  
+}
+
+.cabecaBarraMenu {
+  padding: 0 20px;
+  border-radius: 50px;
+}
+
+.menuLogo {
+  width: auto;
+  height: 48px;
+}
+
+.menuLink {
+  font-family: var(--fonte-padrao);
+  color: var(--cor-azul-forte);
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.menuLink:hover {
+  scale: 1.2;
+  color: var(--cor-laranja);
+  transition: all 200ms linear;
+}
+
+.cabecaBanner {
+  width: 100%;
+  height: 100vh;
+  min-height: 780px;
+  position: relative;
+}
+
+.bannerConteudo {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  padding: 0 auto;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.bannerBlocoChamada {
+  width: 50%;
+  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bannerTitulo {
+  width: 100%;
+  text-align: center;
+  font-family: var(--fonte-titulo);
+  font-size: var(--clamp-titulo-1);
+  color: var(--cor-branco);
+
+}
+
+.chamadaBtn {
+  width: auto;
+  height: auto;
+  padding: 10px 10px;
+  background-color: #000;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 10px;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+  text-decoration: none;
+  font-family: var(--fonte-padrao);
+  color: var(--cor-branco);
+  border: solid 3px var(--cor-preto);
+  font-weight: 600;
+  border-radius: 50px;
+  box-shadow: inset 10px 5px 20px 10px var(--cor-preto), 14px 15px 20px -5px var(--cor-laranja);
+}
+
+.chamadaBtn:hover {
+  scale: 0.9;
+  box-shadow: inset -10px -5px 20px 10px var(--cor-preto);
+  border: solid 3px var(--cor-branco);
+  transition: all 200ms ease-in-out;
+}
+
+.espada01Btn {
+  width: 40px;
+  height: 40px;
+  background-image: url("assets/img/iconSword01.svg");
+  background-position: center;
+  background-size: contain;
+  mix-blend-mode: lighten;
+}
+
+.espada02Btn {
+  width: 40px;
+  height: 40px;
+  background-image: url("assets/img/iconSword03.svg");
+  background-position: center;
+  background-size: contain;
+  mix-blend-mode: lighten;
+}
+
+
+.bannerBlocoLogo {
+  width: 40%;
+  min-width: 320px;
+  display: flex;
+  justify-content: center;
+}
+
+.logoBanner {
+  width: 60%;
+  min-width: 320px;
+  height: auto;
+}
+
+.bannerBack {
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  position: fixed;
+}
+
+
+/* main */
+
+.principal {
+  width: 100%;
+  min-height: 100vh;
+  height: auto;
+  background-color: var(--cor-preto);
+  z-index: 2;
+}
+
+
+/* Preludio */
+
+.preludioContainer {
+  width: 100%;
+  min-width: 320px;
+  padding: 100px 0;
+}
+
+.preludioConteudo {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.preludioBoxImagem {
+  width: 60%;
+  min-width: 320px;
+  display: flex;
+  justify-content: center;
+}
+
+.preludioImg {
+  width: 60%;
+  min-width: 320px;
+  height: auto;
+}
+
+.preludioBoxTextos {
+  width: 40%;
+  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.preludioTextosDetalhe {
+  background-color: var(--cor-laranja);
+  opacity: 1;
+  width: 150px;
+  height: 5px;
+  border-radius: 50px;
+  align-self: center;
+}
+
+.preludioTitulo {
+  width: 100%;
+  text-align: center;
+  font-family: var(--fonte-titulo);
+  color: var(--cor-branco);
+  font-size: var(--clamp-titulo-2);
+}
+
+.preludioTexto {
+  width: 80%;
+  text-align: center;
+  font-family: var(--fonte-padrao);
+  color: var(--cor-branco);
+  font-size: clamp(1rem, 0.8269rem + 0.7692vw, 1.75rem);
+}
+
+
+/* About */
+
+.sobre {
+  width: 100%;
+  height: auto;
+  padding-bottom: 50px;
+}
+
+.sobreContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sobrebanner {
+  width: 100%;
+  height: auto;
+}
+
+.sobrebannerImg {
+  width: 100%;
+  min-width: 360px;
+  height: auto;
+}
+
+.sobreSanfona {
+  width: 100%;
+  min-width: 350px;
+}
+
+.sobreSanfonaItem:not(.collapsed) {
+  background-color: var(--cor-preto);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.carousel-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.carousel-inner {
+  max-width: 800px;
+}
+
+.carousel-inner img {
+  max-width: 100%;
+}
+
+.menu-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  height: 40px;
+}
+
+
+
+@media (max-width: 990px) {
+  .bannerConteudo {
+    flex-direction: column-reverse;
+    gap: 50px;
+  }
+
+  .preludioContainer {
+    padding: 50px 0;
+  }
+
+  .preludioBoxTextos {
+    margin-top: 50px;
+  }
+}
