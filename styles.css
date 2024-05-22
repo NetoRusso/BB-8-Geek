@@ -65,8 +65,16 @@ body {
 }
 
 .cabecaBarraMenu {
+  width: 80%;
   padding: 0 20px;
   border-radius: 50px;
+  position: fixed;
+
+}
+
+.iconCarrinho {
+  width: 24px;
+  height: auto;
 }
 
 .menuLogo {
@@ -358,7 +366,7 @@ body {
 .produtosTitulo {
   font-family: var(--fonte-titulo);
   font-size: var(--clamp-titulo-2);
-  color: var(--cor-branco);
+  color: var(--cor-azul-fraco);
 }
 
 .produtosTexto {
