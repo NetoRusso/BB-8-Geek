@@ -16,6 +16,7 @@
 
   --clamp-titulo-1: clamp(1.5rem, 1.1538rem + 1.5385vw, 3rem);
   --clamp-titulo-2: clamp(1.25rem, 0.9615rem + 1.2821vw, 2.5rem);
+  --clamp-texto-padrao: clamp(1rem, 0.85rem + 0.75vw, 1.75rem);
 }
 
 /* Resets padrão */
@@ -60,7 +61,7 @@ body {
   margin-top: 20px;
   position: absolute;
   top: 0;
-  
+
 }
 
 .cabecaBarraMenu {
@@ -295,12 +296,48 @@ body {
 
 .sobreSanfona {
   width: 100%;
+  max-width: 100%;
   min-width: 350px;
 }
 
+.sobreSanfonaItem,
 .sobreSanfonaItem:not(.collapsed) {
   background-color: var(--cor-preto);
+  font-family: var(--fonte-padrao);
+  color: var(--cor-branco);
+  font-size: var(--clamp-texto-padrao);
+  outline-color: var(--cor-preto);
+  border: none;
+}
 
+.sobreSanfonaInterno {
+  background-color: var(--cor-branco);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+
+.sanfonaTexto {
+  width: 80%;
+  min-width: 300px;
+  font-family: var(--fonte-padrao);
+  font-size: var(--clamp-texto-padrao);
+}
+
+.accordion-button::after {
+  background-image: url("assets/img/simbolo_reduzido.png");
+  background-size: contain;
+}
+
+.accordion-button::after::after {
+  background-image: url("assets/img/simbolo_reduzido.png");
+  background-size: contain;
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url("assets/img/simbolo_reduzido_n.png");
+  background-size: contain;
 }
 
 
