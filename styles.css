@@ -9,6 +9,7 @@
   --cor-azul-medio: #1a2263;
   --cor-azul-forte: #001645;
   --cor-preto: #1a2228;
+  --cor-preto-transparente: #1a2228af;
   --cor-branco: #fcfcf7;
 
   --fonte-padrao: "Poppins", sans-serif;
@@ -502,44 +503,164 @@ body {
 
 /* carrossel de depoimentos */
 
-.carousel-container {
+.depoimentosContainer{
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  height: 100vh;
-}
-
-.carousel-inner {
-  max-width: 800px;
-}
-
-.carousel-inner img {
-  max-width: 100%;
-}
-
-.menu-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-  height: 40px;
+  padding: 20px 0 50px ;
+  gap: 10px;
+  position: relative;
 }
 
 
+.carrosselCompleto {
+  position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    min-width: 300px;
+    height: auto;
+}
 
+.carrosselInterno {
+  border-radius: 20px;
+}
+
+.carousel-control-next-icon {
+  background-image: url("assets/img/btnR.png");
+  background-size: contain;
+  position: absolute;
+  right: -25%;
+}
+
+.carousel-control-prev-icon {
+  background-image: url("assets/img/btnL.png");
+  background-size: contain;
+  position: absolute;
+  left: -25%;
+}
+
+
+
+
+/* rodape */
 .rodape {
   width: 100%;
-  height: 500px;
+  height: auto;
   z-index: 2;
   bottom: 0;
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .rodapeContainer {
   width: 100%;
-  height: 100%;
+  height: auto;
+  min-height: 500px;
+  background-color: var(--cor-preto-transparente);
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 10px;
+  gap: 50px;
+
+}
+
+.rodapeBloco {
+  width: 30%;
+  min-width: 320px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.rodapeLogo {
+  width: 60%;
+  min-width: 300px;
+  height: auto;
+}
+
+.rodapeBloco1Texto {
+  width: 60%;
+  min-width: 300px;
+  font-family: var(--fonte-padrao);
+  color: var(--cor-branco);
+  text-align: right;
+  font-size: clamp(0.75rem, 0.7rem + 0.25vw, 1rem);
+  font-weight: 500;
+}
+
+.blocoDeAssinatura {
+  width: 300px;
+}
+
+.formNew {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.form-check-input:checked {
+  background-color: var(--cor-laranja);
+  border-color: var(--cor-laranja);
+}
+
+.form-control:focus {
+  box-shadow: 0 0 0 .25rem var(--cor-laranja);
+}
+
+
+.newEmail {
+  width: 60%;
+  min-width: 300px;
+}
+
+
+.newsTexto {
+  width: 60%;
+  min-width: 300px;
+  font-family: var(--fonte-padrao);
+  font-size: clamp(0.75rem, 0.7rem + 0.25vw, 1rem);
+  color: var(--cor-branco);
+}
+
+.newBtn {
+  align-self: flex-end;
+  background-color: var(--cor-laranja);
+  padding: 5px 20px;
+  border: none;
+  border-radius: 20px;
+  font-family: var(--fonte-padrao);
+  font-weight: 600;
+}
+
+.newBtn:hover {
+  background-color: var(--cor-azul-forte);
+}
+
+
+
+.rodapeFIm {
+  width: 100%;
+  min-height: 30px;
+  padding: 5px 10px;
   background-color: var(--cor-preto);
-  opacity: 0.6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rodapeFimCopy {
+  font-family: var(--fonte-padrao);
+  color: var(--cor-branco);
+  font-size: clamp(0.75rem, 0.7rem + 0.25vw, 1rem);
+  text-align: center;
+  margin: 0;
 }
 
 
@@ -556,5 +677,10 @@ body {
 
   .preludioBoxTextos {
     margin-top: 50px;
+  }
+
+  .rodapeContainer {
+    align-items: center;
+    gap: 10px;
   }
 }
