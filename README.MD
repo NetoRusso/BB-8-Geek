@@ -1,5 +1,8 @@
 # BB8Geek
 
+--Testando--
+
+
 ## Sobre a BB8Geek
 
 A BB8Geek é mais do que apenas uma loja - é um universo que celebra a cultura geek em todas as suas formas. Composta por uma equipe de entusiastas apaixonados, nos dedicamos a oferecer uma seleção diversificada de produtos que abraçam e celebram a cultura nerd.
