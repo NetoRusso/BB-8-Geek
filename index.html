@@ -474,7 +474,7 @@
             Podemos encomendar para você, nossos <em>GeekHunters</em> é especializada para localizar os melhores
             produtos GEEK com fornecedores oficiais!
           </p>
-          <a href="#" class="produtosFinalBtn">
+          <a href="#contato" class="produtosFinalBtn">
             <p>Entre em contato</p>
           </a>
         </div>
@@ -531,76 +531,168 @@
 
     <section id="contato" class="contato" aria-label="Contatos do BB-8 Geeks">
 
-      <div class="contatoContainer">
+      <div class="contatosAjuste">
 
-        <div class="contatoFormulario">
-          <form class="formularioContatos">
+        <h3 class="contatosTitulo">Tem alguma dúvida? Estamos aqui para te ajudar!</h3>
 
-            <div class="mb-3">
-              <label for="nome" class="form-label textoFormInput">Nome:*</label>
-              <input type="text" class="form-control formInput inputNome" name="nome" id="nome"
-                placeholder="Qual o seu nome?" required>
+        <div class="contatoContainer">
+
+          <div class="contatoFormulario">
+            <form class="formularioContatos">
+
+              <div class="mb-3">
+                <label for="nome" class="form-label textoFormInput">Nome:*</label>
+                <input type="text" class="form-control formInput inputNome" name="nome" id="nome"
+                  placeholder="Qual o seu nome?" required>
+              </div>
+
+              <div class="mb-3">
+                <label for="email" class="form-label textoFormInput">E-mail:*</label>
+                <input type="email" class="form-control formInput inputEmail" name="email" id="email"
+                  placeholder="Qual o seu email?" required>
+              </div>
+
+              <div class="mb-3">
+                <label for="telefone" class="form-label textoFormInput">whatsapp:*</label>
+                <input type="telefone" class="form-control formInput inputTelefone" name="telefone" id="telefone"
+                  placeholder="Qual o seu whatsapp?" minlength="11" maxlength="12">
+              </div>
+
+              <div class="areaMensagem">
+                <label for="mensagem" class="form-label textoFormInput">Mensagem:</label>
+                <textarea type="textarea" class="inputMensagem" name="mensagem" id="mensagem"
+                  placeholder="Me conte tudo..."></textarea>
+              </div>
+              <input class="btn btn-primary formularioBtn" type="submit" value="enviar">
+            </form>
+          </div>
+
+          <div class="contatosDados">
+            <div class="contatosDadosEndereco">
+
+              <div class="contatosLocalizacaoBox contatosBox">
+                <img src="assets/img/enderecoIcon.png" alt="icon de gps" class="contatosLocalizacaoIcon dadosIcon">
+                <p class="contatosLocalizacao contatosDadosTexto">
+                  Rua Alfeneiros, 04, B. Dos Limoeiros. <br />
+                  Townsville -Springfield.
+                </p>
+              </div>
+
+              <div class="contatosTelefoneBox contatosBox">
+                <img src="assets/img/telefoneIcon.png" alt="icon de Telefone" class="contatosTelefoneIcon dadosIcon">
+                <p class="contatosTelefone contatosDadosTexto">
+                  +1 (816) 866-907-3235
+                </p>
+              </div>
+
+              <div class="contatosEmailBox contatosBox">
+                <img src="assets/img/emailIcon.png" alt="icon de Email" class="contatosTelefoneIcon dadosIcon">
+                <p class="contatosEmail contatosDadosTexto">
+                  <u><em>contato@bb-8geek.com</em></u>
+                </p>
+              </div>
+
             </div>
+            <div class="contatosFaq">
+              <h4 class="tituloFaq">
+                F.A.Q.
+              </h4>
 
-            <div class="mb-3">
-              <label for="email" class="form-label textoFormInput">E-mail:*</label>
-              <input type="email" class="form-control formInput inputEmail" name="email" id="email"
-                placeholder="Qual o seu email?" required>
+              <div id="carouselExampleControls" class="carousel slide carrosselFaq" data-bs-ride="carousel">
+                <div class="carousel-inner">
+
+                  <div class="carousel-item active">
+                    <div class="slideFaq01 slideFaqImpar slideFaq">
+                      <h4 class="slideFaqTitulo">1. O que é a BB-8 Geek?</h4>
+                      <p class="slideFaqTexto">Loja especializada com seleção diversa de produtos para celebrar o
+                        universo nerd. Seja bem-vindo(a)👓</p>
+                    </div>
+                  </div>
+
+                  <div class="carousel-item">
+                    <div class="slideFaq02 slideFaqPar slideFaq">
+                      <h4 class="slideFaqTitulo">2. Qual é a missão da<br /> BB-8 Geek?</h4>
+                      <p class="slideFaqTexto">Nossa missão é enriquecer sua jornada geek. Com colecionáveis exclusivos
+                        e itens essenciais, temos tudo para expressar sua paixão geek.✨</p>
+                    </div>
+                  </div>
+
+                  <div class="carousel-item">
+                    <div class="slideFaq03 slideFaqImpar slideFaq">
+                      <h4 class="slideFaqTitulo">3. Como posso explorar o universo geek com a <br />BB-8 Geek?</h4>
+                      <p class="slideFaqTexto">Venha conosco explorar a galáxia geek! Seja fã de quadrinhos, gamer,
+                        amante de filmes de ficção científica ou apreciador da cultura geek, temos algo especial para
+                        você.🤓</p>
+                    </div>
+                  </div>
+
+                  <div class="carousel-item">
+                    <div class="slideFaq04 slideFaqPar slideFaq">
+                      <h4 class="slideFaqTitulo">4. Como posso me juntar à comunidade BB-8 Geek?</h4>
+                      <p class="slideFaqTexto">A BB-8 Geek, mais que uma loja, é uma comunidade. Junte-se a nós,
+                        compartilhe sua paixão e faça parte da nossa família geek em crescimento🎮 </p>
+                    </div>
+                  </div>
+
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                  data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+
+
             </div>
-
-            <div class="mb-3">
-              <label for="telefone" class="form-label textoFormInput">whatsapp:*</label>
-              <input type="telefone" class="form-control formInput inputTelefone" name="telefone" id="telefone"
-                placeholder="Qual o seu whatsapp?" minlength="11" maxlength="12">
-            </div>
-
-            <div class="areaMensagem">
-              <label for="mensagem" class="form-label textoFormInput">Mensagem:</label>
-              <textarea type="textarea" class="inputMensagem" name="mensagem" id="mensagem"
-                placeholder="Me conte tudo..."></textarea>
-            </div>
-            <input class="btn btn-primary formularioBtn" type="submit" value="enviar">
-          </form>
-        </div>
-
-        <div class="contatosDados">
-          
-        </div>
-
-
-      </div>
+          </div>
     </section>
 
   </main>
 
   <footer class="rodape" id="rodape" aria-label="Roda Pé com informações gerais da BB-8 Geek">
-    <div class="rodapeContainer">
-      <div class="rodapeBloco1 rodapeBloco">
-        <img src="assets/img/bb8_logo_branco.png" alt="logo do BB-8 Geek" class="rodapeLogo">
-        <p class="rodapeBloco1Texto">
-          Aqui o único limite é a sua imaginação...<br />e o nosso estoque.
-        </p>
-      </div>
+    <div class="rodapeAjuste">
+      <div class="rodapeContainer">
+        <div class="rodapeBloco1 rodapeBloco">
+          <img src="assets/img/bb8_logo_branco.png" alt="logo do BB-8 Geek" class="rodapeLogo">
+          <p class="rodapeBloco1Texto">
+            Aqui o único limite é a sua imaginação...<br />e o nosso estoque.
+          </p>
+        </div>
 
-      <div class="rodapeBloco2 rodapeBloco">
+        <div class="rodapeBloco2 rodapeBloco">
 
-        <p class="newsTexto">Quer ter acesso a conteúdos especiais e promoções imperdíveis?</p>
-        <form action="#" class="formNew">
-          <div class="input-group mb-3 blocoDeAssinatura">
-            <div class="input-group-text">
-              <input class="form-check-input mt-0" type="checkbox" value=""
-                aria-label="Checkbox for following text input">
-            </div>
-            <input type="email" class="form-control newEmail" placeholder="Digite aqui o seu email"
-              aria-label="Text input with checkbox">
+          <div>
+            <p class="newsTexto">Quer ter acesso a conteúdos especiais e promoções imperdíveis?</p>
+            <form action="#" class="formNew">
+              <div class="input-group mb-3 blocoDeAssinatura">
+                <div class="input-group-text">
+                  <input class="form-check-input mt-0" type="checkbox" value=""
+                    aria-label="Checkbox for following text input">
+                </div>
+                <input type="email" class="form-control newEmail" placeholder="Digite aqui o seu email"
+                  aria-label="Text input with checkbox">
+              </div>
+              <button class="btn btn-primary newBtn" type="reset">Assinar</button>
+            </form>
           </div>
-          <button class="btn btn-primary newBtn" type="reset">Assinar</button>
-        </form>
-      </div>
 
-      <div class="rodapeBloco3 rodapeBloco">
+        </div>
 
+        <div class="rodapeBloco3 rodapeBloco">
+          <div class="instaLink">
+            <div class="redeLogo"></div>
+            <p class="redeTexto">Intagram da BB-8 Geek</p>
+          </div>
+        </div>
       </div>
+      <p class="rodapeTextoFeito">
+        Mau feito, Feito!
+      </p>
     </div>
     <div class="rodapeFIm">
       <p class="rodapeFimCopy"> Todos os direitos reservados || BB-8 Geek &copy; 2024 || 00.000.000/0001-00</p>
