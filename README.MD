@@ -1,6 +1,20 @@
 # BB8Geek
 
---Testando--
+## Idealização:
+
+Desenvolver uma página em forma de Landing Page, decidimos por um e-commerce,  com o foco no publico Nerd/Geek.
+
+A página foi desenvolvido com inumeras referências a cultura geek, e já esta preparada para receber todos os bancos de dados.
+
+O Banner, foi desenvolvido para ser interativo, e gerar experiência para o usuário.
+
+Tecnologias utilizadas:
+
+.HTML;
+.CSS;
+.JavaScript;
+
+<div style="display: flex;">Estilização modular por meio do Bootstrap 5; <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/2560px-Bootstrap_logo.svg.png" > </div>
 
 
 ## Sobre a BB8Geek
