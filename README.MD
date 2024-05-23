@@ -14,7 +14,7 @@ Tecnologias utilizadas:
 .CSS;
 .JavaScript;
 
-<div style="display: flex;">Estilização modular por meio do Bootstrap 5; <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/2560px-Bootstrap_logo.svg.png" width="24px" > </div>
+<div style="display: flex;">Estilização modular por meio do Bootstrap 5; <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/2560px-Bootstrap_logo.svg.png" > </div>
 
 ## Sobre a BB8Geek
 
