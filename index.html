@@ -41,7 +41,7 @@
                       alt="icone de carrinho" class="iconCarrinho"> Meu Pedido</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link menuLink" href="#contato">Contato</a>
+                  <a class="nav-link menuLink" href="#contato">Contatos</a>
                 </li>
               </ul>
             </div>
@@ -529,7 +529,47 @@
       </div>
     </section>
 
+    <section id="contato" class="contato" aria-label="Contatos do BB-8 Geeks">
 
+      <div class="contatoContainer">
+
+        <div class="contatoFormulario">
+          <form class="formularioContatos">
+
+            <div class="mb-3">
+              <label for="nome" class="form-label textoFormInput">Nome:*</label>
+              <input type="text" class="form-control formInput inputNome" name="nome" id="nome"
+                placeholder="Qual o seu nome?" required>
+            </div>
+
+            <div class="mb-3">
+              <label for="email" class="form-label textoFormInput">E-mail:*</label>
+              <input type="email" class="form-control formInput inputEmail" name="email" id="email"
+                placeholder="Qual o seu email?" required>
+            </div>
+
+            <div class="mb-3">
+              <label for="telefone" class="form-label textoFormInput">whatsapp:*</label>
+              <input type="telefone" class="form-control formInput inputTelefone" name="telefone" id="telefone"
+                placeholder="Qual o seu whatsapp?" minlength="11" maxlength="12">
+            </div>
+
+            <div class="areaMensagem">
+              <label for="mensagem" class="form-label textoFormInput">Mensagem:</label>
+              <textarea type="textarea" class="inputMensagem" name="mensagem" id="mensagem"
+                placeholder="Me conte tudo..."></textarea>
+            </div>
+            <input class="btn btn-primary formularioBtn" type="submit" value="enviar">
+          </form>
+        </div>
+
+        <div class="contatosDados">
+          
+        </div>
+
+
+      </div>
+    </section>
 
   </main>
 
