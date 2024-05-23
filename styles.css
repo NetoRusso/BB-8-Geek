@@ -67,6 +67,7 @@ body {
 
 .cabecaBarraMenu {
   width: 80%;
+  z-index: 8;
   padding: 0 20px;
   border-radius: 50px;
   position: fixed;
@@ -549,13 +550,30 @@ body {
   padding: 20px 0 50px 0;
 }
 
+.contatosAjuste {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.contatosTitulo {
+  width: 80%;
+  min-width: 300px;
+  font-family: var(--fonte-titulo);
+  color: var(--cor-branco);
+  font-size: var(--clamp-titulo-2);
+  text-align: center;
+  margin: 30px 0;
+}
+
 .contatoContainer {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
-
+  gap: 20px;
 }
 
 .contatoFormulario {
@@ -645,6 +663,103 @@ body {
   transition: all 200ms ease-in-out;
 }
 
+.contatosDados {
+  width: 40%;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contatosDadosEndereco {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.contatosBox {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.dadosIcon {
+  width: 32px;
+  height: auto;
+  object-fit: contain;
+}
+
+.contatosDadosTexto {
+  font-family: var(--fonte-padrao);
+  color: var(--cor-branco);
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.contatosEmail {
+  font-weight: 300;
+}
+
+.contatosFaq {
+  width: 40%;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.tituloFaq {
+  font-family: var(--fonte-titulo);
+  color: var(--cor-branco);
+  font-size: 32px;
+  align-self: center;
+}
+
+.carrosselFaq {
+  margin-top: 20px;
+}
+
+.slideFaq {
+  width: 300px;
+  height: 220px;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.slideFaqImpar {
+  background-color: var(--cor-azul-forte);
+}
+
+.slideFaqPar {
+  background-color: var(--cor-laranja);
+}
+
+.slideFaqTitulo {
+  font-family: var(--fonte-padrao);
+  color: var(--cor-branco);
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.slideFaqTexto {
+  width: 90%;
+  font-family: var(--fonte-padrao);
+  color: var(--cor-branco);
+  font-size: 12px;
+  font-weight: 500;
+}
+
 
 /* rodape */
 .rodape {
@@ -657,11 +772,18 @@ body {
   flex-direction: column;
 }
 
+.rodapeAjuste {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+    background-color: var(--cor-preto-transparente);
+}
+
 .rodapeContainer {
   width: 100%;
   height: auto;
   min-height: 500px;
-  background-color: var(--cor-preto-transparente);
   display: flex;
   flex-flow: row wrap;
   align-items: center;
@@ -697,6 +819,13 @@ body {
   font-weight: 500;
 }
 
+.rodapeBloco2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
 .blocoDeAssinatura {
   width: 300px;
 }
@@ -705,6 +834,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  /* align-items: center; */
 }
 
 .form-check-input:checked {
@@ -732,7 +862,6 @@ body {
 }
 
 .newBtn {
-  align-self: flex-end;
   background-color: var(--cor-laranja);
   padding: 5px 20px;
   border: none;
@@ -745,7 +874,48 @@ body {
   background-color: var(--cor-azul-forte);
 }
 
+.instaLink {
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  gap: 20px;
+}
 
+.redeLogo {
+  width: 64px;
+  height: 64px;
+  background-image: url("assets/img/instagramIcon_1.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.redeLogo:hover {
+  background-image: url("assets/img/instagramIcon.png");
+  scale: 0.9;
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+}
+
+.redeTexto {
+  font-family: var(--clamp-texto-padrao);
+  color: var(--cor-branco);
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.rodapeTextoFeito {
+  font-family: var(--fonte-titulo);
+  color: var(--cor-branco);
+  font-size: 20px;
+  filter: drop-shadow(0 0 15px var(--cor-branco));
+}
+
+.rodapeTextoFeito:hover {
+  color: var(--cor-laranja);
+  filter: drop-shadow(0 0 5px var(--cor-preto));
+  transition: all 200ms ease-in-out;
+}
 
 .rodapeFIm {
   width: 100%;
