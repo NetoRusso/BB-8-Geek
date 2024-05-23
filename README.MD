@@ -1,5 +1,22 @@
 # BB8Geek
 
+## Idealização:
+
+Desenvolver uma página em forma de Landing Page, decidimos por um e-commerce,  com o foco no publico Nerd/Geek.
+
+A página foi desenvolvido com inumeras referências a cultura geek, e já esta preparada para receber todos os bancos de dados.
+
+O Banner, foi desenvolvido para ser interativo, e gerar experiência para o usuário.
+
+Tecnologias utilizadas:
+
+.HTML;
+.CSS;
+.JavaScript;
+
+Estilização modular por meio do Bootstrap 5; <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/2560px-Bootstrap_logo.svg.png" alt="...">
+
+
 ## Sobre a BB8Geek
 
 A BB8Geek é mais do que apenas uma loja - é um universo que celebra a cultura geek em todas as suas formas. Composta por uma equipe de entusiastas apaixonados, nos dedicamos a oferecer uma seleção diversificada de produtos que abraçam e celebram a cultura nerd.
