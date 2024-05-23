@@ -1,0 +1,124 @@
+.image-icon {
+  position: relative;
+  width: auto;
+  width: 24px;
+  height: auto;
+  margin-right: 5px;
+}
+
+.info-carrinho {
+  position: absolute;
+  top: 11px;
+  right: 11px;
+  background-color: var(--cor-azul-forte);
+  width: 15px;
+  height: 15px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.info-carrinho-p {
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+  color: var(--cor-amarelo);
+  font-weight: 900;
+  width: 15px;
+  height: 15px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.modal-content {
+  min-height: 80vh;
+}
+
+.modal-header {
+  justify-content: space-between;
+}
+
+.close {
+  float: right;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--cor-azul-forte);
+  text-shadow: 0 1px 0 #fff;
+  background-color: transparent;
+  border: 0;
+}
+
+.modal-title {
+  font-family: var(--fonte-titulo);
+  color: var(--cor-laranja);
+  font-size: var(--clamp-titulo-2);
+}
+
+.table .thead-dark th {
+  color: #fff;
+  background-color: var(--cor-preto);
+  border-color: var(--cor-azul-forte);
+  font-family: var(--fonte-texto-padrao);
+}
+
+.table td {
+  vertical-align: middle;
+}
+
+.card-tablet {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  border: none;
+  flex-wrap: wrap;
+}
+
+.card-image {
+  height: auto;
+  width: 90%;
+  max-width: 120px;
+  object-fit: contain;
+}
+
+.card-image-titulo {
+  font-size: 16px;
+  font-family: var(--fonte-texto-padrao);
+  font-weight: 600;
+}
+
+.card-image-texto {
+  font-size: 12px;
+  font-family: var(--fonte-texto-padrao);
+  font-weight: 400;
+}
+
+.texto-qtd {
+  margin: 0;
+  padding: 0;
+  width: 20px;
+  text-align: center;
+}
+
+.icon svg {
+  width: 20px;
+  height: 20px;
+}
+
+.botao-caixa {
+  color: var(--cor-laranja);
+  font-family: var(--fonte-texto-padrao);
+  border: solid 1px var(--cor-laranja);
+  font-weight: 600;
+}
+
+.botao-caixa:hover {
+  color: var(--cor-branco);
+  background-color: var(--cor-laranja);
+}
+
+.ocultarIcon {
+  display: none;
+}
