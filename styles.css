@@ -38,7 +38,6 @@ body {
   width: 100%;
   min-height: 100vh;
   overflow-x: hidden;
-  /* background-color: var(--cor-branco); */
 }
 
 /* fim do reset */
@@ -67,11 +66,20 @@ body {
 
 .cabecaBarraMenu {
   width: 80%;
+  min-width: 300px;
   z-index: 8;
   padding: 0 20px;
   border-radius: 50px;
   position: fixed;
 
+}
+
+.juntos {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  flex-wrap: nowrap;
+  gap: 20px;
 }
 
 .iconCarrinho {
